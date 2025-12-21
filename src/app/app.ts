@@ -1,10 +1,11 @@
 import {Component} from '@angular/core';
+import {Image} from 'src/app/image/image';
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [Image],
   template: `
     <h1>Default</h1>
-    <div><img  class="images" src="Untitled.jpeg"></div>
+    <app-image></app-image>
   `,
   styleUrls: ['./app.css'],
 })
