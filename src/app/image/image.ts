@@ -4,9 +4,21 @@ import { Component } from '@angular/core';
   selector: 'app-image',
   imports: [],
   template: `
-    <div><img  class="images" src="Untitled.jpeg"></div>
+    <div class = "container"><img  class="images" src="Untitled.jpeg"></div>
   `,
-  styles: ``,
+  styles: `.images{
+    width: 50%;
+    height: 50%;
+    
+    }
+
+    .container{
+     display: flex; 
+     justify-content: center; 
+     align-items: center;
+    }
+
+  `,
 })
 export class Image {
 
