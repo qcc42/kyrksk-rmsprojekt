@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-image',
   imports: [],
   template: `
-    <div class = "container"><img  class="images" src="Untitled.jpeg"></div>
+
+    <div class = "container"><img  class="images" src = {{source}}/></div>
   `,
   styles: `.images{
     width: 50%;
@@ -21,5 +22,6 @@ import { Component } from '@angular/core';
   `,
 })
 export class Image {
+@Input('src') source ?:  string | "";
 
 }
