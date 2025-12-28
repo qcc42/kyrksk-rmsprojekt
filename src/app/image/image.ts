@@ -1,11 +1,21 @@
 import { Component, Input} from '@angular/core';
 
+
+
 @Component({
   selector: 'app-image',
   imports: [],
   template: `
 
-    <div class = "container"><img  class="images" src = {{source}}/></div>
+    <div class = "container">
+    
+    <img src = "{{src}}.jpeg"/> 
+    <button (click)="onClick()"> Ultimate </button> 
+
+      
+
+    </div>
+    
   `,
   styles: `.images{
     width: 50%;
@@ -22,6 +32,7 @@ import { Component, Input} from '@angular/core';
   `,
 })
 export class Image {
-@Input('src') source ?:  string | "";
-
+      
+       src = 1;
+       onClick() {if(this.src ===1){ this.src = 2}else{this.src = 1};} 
 }

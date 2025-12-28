@@ -1,16 +1,22 @@
 import {Component, Input} from '@angular/core';
+import {Image} from 'src/app/image/image'
+import {changeState} from 'src/app/helper';
+
+let state = 1;
 @Component({
     selector: 'event-button',
-    imports: [],
+    imports: [Image],
     template: `
-     <button (click)="onClick($event)"> Ultimate </button> 
-  `,
+
+
+     `,
 
   
 
 })
 
 export class EventButton { 
-    
 
-    onClick(event: Event) { console.log("click", event); } }
+
+
+}
